@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86b7d01e4f.js" crossorigin="anonymous"></script>
+    <title>Rock Paper & Scissors</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title"> ROCK PAPER & SCISSORS</h1>
+    </header>
+
+    <div class="scoreboard">
+        <h1 class="scoreTitle">Score Board</h1>
+        <h1 class="scoreTitle" id="scoreInfo"></h1>
+        <div class="scoreContainer">
+        <div class="score">
+            <p id="playerScore">Player Score: 0</p>
+            <i class="fas fa-hand-rock" id="playerSign"></i>
+        </div>
+
+        <div class="score">
+            <p id="computerScore">Computer Score: 0</p>
+            <i class="fas fa-hand-rock" id="computerSign"></i>
+        </div>
+    </div>
+    </div>
+    <p class="buttonHead">Select to play</p>
+    <div class="button">
+        <button class="btn" id="rockbtn">
+            <i class="far fa-hand-rock fa-8x"></i>
+        </button>
+
+        <button class="btn" id="paperbtn">
+            <i class="far fa-hand-paper fa-8x"></i>
+        </button>
+
+        <button class="btn" id="scissorsbtn">
+            <i class="far fa-hand-scissors fa-8x"></i>
+        </button>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; Akash Raj </p>
+        <a href="https://github.com/Akashraj161" target="_blank"> 
+            <i class="fab fa-github"></i> </a>
+         
+           
+    </footer>
+
+    <div class="modal" id="endgameModal">
+        <p class="message bold" id="endgameMsg"></p>
+        <p class="message">Let's Play Again!</p>
+        <button class="btn btn-restart" id="restartBtn">Restart</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

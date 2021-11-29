@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: #444444;
+    border-bottom: 4px solid #FF8303;
+}
+
+.title{
+    color: #FF8303;
+    font-size:50px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+.scoreboard{
+    text-align: center;
+    align-items: center;
+    background-color: #232323;
+    color: #ffffff;
+}
+
+.scoreContainer{
+   
+   display: flex;
+   justify-content: space-evenly;
+   
+   padding: 40px;
+   background-color:#232323 ;
+  
+}
+
+.score{
+    font-size: 25px;
+}
+.buttonHead{
+    text-align: center;
+    padding:20px;
+    color: #ffffff;
+  
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #232323;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    background-color: #232323;
+       
+}
+
+.btn{
+    cursor: pointer;
+    border: 4px solid #2F86A8;
+    border-radius: 10px;
+    padding: 10px;
+    color:#94DAFF;
+}
+
+
+.btn:hover{
+    color: #2F86A6;
+}
+
+
+.btn:active{
+    color: #2F86A6;
+    
+}
+
+.fas{
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fas.active{
+  visibility: visible;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+  color:#ffffff;
+  height: 50px;
+  gap: 10px;
+}
+.fa-github{
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover{
+  transform: rotate(360deg) scale(1.2);
+}
+
+
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #FF8303;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    font-size: 30px;
+  }
+
+  
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .message {
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+   
+  .btn-restart {
+    margin-top: 10px;
+    background-color:#232323 ;
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+  }
+  .btn-restart:hover{
+    transform: scale(1.2);
+    color: #ffffff;
+}
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
